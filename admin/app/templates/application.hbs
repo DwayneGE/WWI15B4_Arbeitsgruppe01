@@ -1,0 +1,43 @@
+<!--menü-button-->
+<button class="large ui blue button">
+  Menü
+</button>
+
+<!--sidebar-->
+<div class="ui left demo vertical thin sidebar labeled fixed icon menu">
+  {{#link-to "index"}}
+  <a class="item">
+    <img class="ui image" src="/image/admin.png"/>
+  </a>
+  {{/link-to}}
+  {{#link-to "bearbeiten"}}
+  <a class="item">
+    <i class="edit icon"></i>
+    Bearbeiten
+  </a>
+  {{/link-to}}
+  {{#link-to "anlegen"}}
+  <a class="item">
+    <i class="add circle icon"></i>
+    Anlegen
+  </a>
+  {{/link-to}}
+</div>
+
+{{outlet}}
+
+<!-- display sidebar functions-->
+<script>
+    $(function(){
+        $("button").click(function(){
+            $(".ui.labeled.icon.sidebar").sidebar('toggle')
+        });
+    });
+
+    $(function(){
+        $("a").click(function(){
+            $(".ui.labeled.icon.sidebar").sidebar('toggle')
+        });
+    });
+</script>
+
