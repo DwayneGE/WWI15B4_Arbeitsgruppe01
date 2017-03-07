@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'admin',
+    modulePrefix: 'admin-bib',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
