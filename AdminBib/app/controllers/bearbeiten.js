@@ -11,6 +11,12 @@ export default Ember.Controller.extend({
             } else {
                 return;
             }
+        },
+
+        löschen: function(id) {
+            store.find('buch', id).then(function (buch) {
+            buch.destroyRecord();
+            });
         }
     }
 });

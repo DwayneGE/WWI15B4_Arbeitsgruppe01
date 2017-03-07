@@ -43,7 +43,7 @@
       <td>{{buch.auflage}}</td>
       <td>{{buch.verlag}}</td>
       <td class="center aligned"> {{#link-to "buch"}} <i class="large edit blue icon"></i> {{/link-to}}</td>
-      <td class="center aligned"> <i class="large trash blue icon"></i> </td>
+      <td class="center aligned"> <i class="large trash blue icon" {{action "löschen" on="click"}}></i> </td>
     </tr>
     {{/each}}
   </tbody>

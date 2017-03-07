@@ -16,19 +16,19 @@
   <div class="four wide column"></div>
   <div class="three wide column">
       <h4 class="ui header">Titel</h4>  
-      <div class="ui input focus">
-      <input placeholder="Titel..." type="text">
+      <div class="ui input focus" value=titel>
+      <input placeholder="Titel..." type="text" >
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Autor</h4>  
-      <div class="ui input focus">
+      <div class="ui input focus" value=autor>
       <input placeholder="Autor..." type="text">
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Verlag</h4>  
-      <div class="ui input focus">
+      <div class="ui input focus" value=verlag>
       <input placeholder="Verlag..." type="text">
       </div>
   </div>
@@ -37,19 +37,19 @@
   <div class="four wide column"></div>
   <div class="three wide column">
       <h4 class="ui header">ISBN</h4>  
-      <div class="ui input focus">
+      <div class="ui input focus" value=isbn>
       <input placeholder="ISBN..." type="text">
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Auflage</h4>  
-      <div class="ui input focus">
+      <div class="ui input focus" value=auflage>
       <input placeholder="Auflage..." type="text">
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Erscheinungsjahr</h4>  
-      <div class="ui input focus">
+      <div class="ui input focus" value=erscheinungsjahr>
       <input placeholder="Erscheinungsjahr..." type="text">
       </div>
   </div>
@@ -58,14 +58,14 @@
   <div class="four wide column"></div>
   <div class="three wide column">
       <h4 class="ui header">Kategorie</h4>  
-      <div class="ui input focus">
+      <div class="ui input focus" value=kategorie>
       <input placeholder="Kategorie..." type="text">
       </div>
   </div>
   <div class="nine wide column"></div>
 
   <div class="ui three column centered grid">
-    <button class="align center large ui blue button">
+    <button class="align center large ui blue button" {{action "anlegen" on="click"}}>
         Anlegen
     </button>
   </div>
