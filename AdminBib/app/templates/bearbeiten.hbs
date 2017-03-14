@@ -15,14 +15,14 @@
       <i class="search blue icon"></i>
     </div>
   </div>
+  {{#link-to "anlegen"}}
   <div class="item">
-    {{#link-to "anlegen"}}
     <button class="align center large ui blue button">
       <i class="left aligned circle add icon"></i>
         Neues Buch anlegen
     </button>
-    {{/link-to}}
-  </div> 
+  </div>
+  {{/link-to}} 
 </div>
 
 <!-- Suchtreffer als Tabelle -->
@@ -42,7 +42,7 @@
       <td>{{buch.titel}}</td>
       <td>{{buch.auflage}}</td>
       <td>{{buch.verlag}}</td>
-      <td class="center aligned"> {{#link-to "buch"}} <i class="large edit blue icon"></i> {{/link-to}}</td>
+      <td class="center aligned"> {{#link-to "ändern"}} <i class="large edit blue icon"></i> {{/link-to}}</td>
       <td class="center aligned"> <i class="large trash blue icon" {{action "löschen" on="click"}}></i> </td>
     </tr>
     {{/each}}

@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
         },
 
         löschen: function(id) {
-            store.find('buch', id).then(function (buch) {
+            this.get('store').find('buch', id).then(function (buch) {
             buch.destroyRecord();
             });
         }
