@@ -5,18 +5,14 @@ export default Ember.Controller.extend({
 
      actions: {
 
-        suche: function(titel) {
-            if (titel !== '') {
-                return this.get('store').find('buch', titel);
-            } else {
-                return;
-            }
+        löschen: function(id) {
+            this.get('store').findRecord('buch', id).then(function (buch) {
+            buch.destroyRecord();
+            }); 
         },
 
-        löschen: function(id) {
-            this.get('store').find('buch', id).then(function (buch) {
-            buch.destroyRecord();
-            });
+        ändernÖffnen: function (id) {
+            this.transitionToRoute('ändern', id);
         }
     }
 });

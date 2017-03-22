@@ -16,20 +16,20 @@
   <div class="four wide column"></div>
   <div class="three wide column">
       <h4 class="ui header">Titel</h4>  
-      <div class="ui input focus" value=titel>
-      <input placeholder="Titel..." type="text" >
+      <div class="ui input focus">
+        {{input type=text value=model.titel}}
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Autor</h4>  
-      <div class="ui input focus" value=autor>
-      <input placeholder="Autor..." type="text">
+      <div class="ui input focus">
+        {{input type=text value=model.autor}}
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Verlag</h4>  
-      <div class="ui input focus" value=verlag>
-      <input placeholder="Verlag..." type="text">
+      <div class="ui input focus">
+        {{input type=text value=model.verlag}}
       </div>
   </div>
   <div class="three wide column"></div>
@@ -37,20 +37,20 @@
   <div class="four wide column"></div>
   <div class="three wide column">
       <h4 class="ui header">ISBN</h4>  
-      <div class="ui input focus" value=isbn>
-      <input placeholder="ISBN..." type="text">
+      <div class="ui input focus">
+        {{input type=text value=model.isbn}}
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Auflage</h4>  
-      <div class="ui input focus" value=auflage>
-      <input placeholder="Auflage..." type="text">
+      <div class="ui input focus">
+        {{input type=text value=model.auflage}}
       </div>
   </div>
   <div class="three wide column">
       <h4 class="ui header">Erscheinungsjahr</h4>  
-      <div class="ui input focus" value=erscheinungsjahr>
-      <input placeholder="Erscheinungsjahr..." type="text">
+      <div class="ui input focus">
+        {{input type=text value=model.erscheinungsjahr}}
       </div>
   </div>
   <div class="three wide column"></div>
@@ -58,14 +58,14 @@
   <div class="four wide column"></div>
   <div class="three wide column">
       <h4 class="ui header">Kategorie</h4>  
-      <div class="ui input focus" value=kategorie>
-      <input placeholder="Kategorie..." type="text">
+      <div class="ui input focus">
+        {{input type=text value=model.kategorie}}
       </div>
   </div>
   <div class="nine wide column"></div>
 
   <div class="ui three column centered grid">
-    <button class="align center large ui blue button" {{action "anlegen" on="click"}}>
+    <button class="align center large ui blue button" {{action "anlegen" model}}>
         Anlegen
     </button>
   </div>

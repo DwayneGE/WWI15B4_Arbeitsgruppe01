@@ -1,9 +1,9 @@
-<!--menü-button-->
+<!-- 
+
 <button class="large ui blue button">
   Menü
 </button>
 
-<!--sidebar-->
 <div class="ui left demo vertical thin sidebar labeled fixed icon menu">
   {{#link-to "index"}}
   <a class="item">
@@ -26,7 +26,7 @@
 
 {{outlet}}
 
-<!-- display sidebar functions-->
+
 <script>
     $(function(){
         $("button").click(function(){
@@ -40,4 +40,24 @@
         });
     });
 </script>
+-->
 
+<div class="ui inverted blue menu">
+  {{#link-to "index"}}
+  <a class="item">
+    Home
+  </a>
+  {{/link-to}}
+  {{#link-to "bearbeiten"}}
+  <a class="item">
+    Bearbeiten
+  </a>
+  {{/link-to}}
+  {{#link-to "anlegen"}}
+  <a class="item">
+    Anlegen
+  </a>
+  {{/link-to}}
+</div>
+
+{{outlet}}

@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('bearbeiten');
   this.route('anlegen');
-  this.route('ändern');
+  this.route('ändern', {path:'aendern/:buchid'});
 });
 
 export default Router;

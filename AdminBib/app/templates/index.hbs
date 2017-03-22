@@ -1,1 +1,47 @@
-{{outlet}}
+<div class="ui grid">
+
+<div class="sixteen wide column"></div>
+<div class="sixteen wide column"></div>
+<div class="sixteen wide column"></div>
+
+
+<h2 class="ui centered aligned huge icon header">
+  <div class="content">
+    Willkommen Admin!
+  </div>
+</h2>
+
+<div class="sixteen wide column"></div>
+<div class="sixteen wide column"></div>
+<div class="sixteen wide column"></div>
+
+<div class="three wide column"></div>
+<div class="four wide column">
+
+
+<h2 class="ui icon header">
+  <div class="content">
+    Bearbeiten
+    <div class="sub header">Wenn du Bücher bearbeiten möchtest, dann klick hier!</div>
+    <br>
+    {{#link-to "bearbeiten"}}
+    <i class="centered edit blue icon"></i>
+    {{/link-to}}
+  </div>
+</h2>
+</div>
+
+<div class="two wide column"></div>
+<div class="four wide column">
+<h2 class="ui icon header">
+  <div class="content">
+    Anlegen
+    <div class="sub header">Wenn du neue Bücher anlegen möchtest, dann klick hier!</div>
+    <br>
+     {{#link-to "anlegen"}}
+    <i class="add circle blue icon"></i>
+    {{/link-to}}
+  </div>
+</h2>
+</div>
+</div>
