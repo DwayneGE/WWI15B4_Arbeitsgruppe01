@@ -34,6 +34,6 @@ export default function () {
         auflage: 2,
         verlag: 'springer'
       }
-    }}
+    }};
   });
 }

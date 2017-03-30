@@ -1,0 +1,49 @@
+<!-- Überschrift -->
+<h2 class="ui center aligned icon header">
+  <i class="centered edit blue icon"></i>
+  <div class="content">
+    Bearbeiten
+    <div class="sub header">Hier kannst du Bücher bearbeiten.</div>
+  </div>
+</h2>
+
+<div class="ui grid">
+<div class="sixteen wide column"></div>
+<div class="sixteen wide column"></div>
+</div>
+
+<!-- Menuleiste -->
+<div class="ui menu">
+  {{#link-to "buch.anlegen"}}
+  <div class="item">
+    <button class="align center large ui blue button">
+      <i class="left aligned circle add icon"></i>
+        Neues Buch anlegen
+    </button>
+  </div> 
+  {{/link-to}} 
+</div>
+
+<!-- Suchtreffer als Tabelle -->
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Titel</th>
+      <th>Auflage</th>
+      <th>Verlag</th>
+      <th class="center aligned two wide"> Bearbeiten</th>
+      <th class="center aligned two wide"> Löschen</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |buch|}}
+    <tr>
+      <td> {{ buch.titel}} </td>
+      <td> {{ buch.auflage}} </td> 
+      <td> {{ buch.verlag}} </td>
+      <td class="center aligned"> {{#link-to "buch"}} <i class="large edit blue icon" {{action "ändernÖffnen" buch.id}}></i> {{/link-to}}</td>
+      <td class="center aligned"> <i class="large trash blue icon" {{action "löschen" buch.id}}></i> </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
