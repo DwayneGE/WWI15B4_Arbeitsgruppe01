@@ -6,6 +6,8 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
+
+//Handling für alle möglichen Routes die unsere Webanwendnung aufrufen kann
 Router.map(function() {
   this.route('buch', function() {
     this.route('bearbeiten');
