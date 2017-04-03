@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="547" started-at="2017-03-31T14:40:49Z" finished-at="2017-03-31T14:40:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="547" started-at="2017-03-31T14:40:49Z" finished-at="2017-03-31T14:40:49Z">
+      <class name="com.bibliothek.verwaltung.TestKlasse">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bibliothek.verwaltung.TestKlasse@67784306]" name="setUp" is-config="true" duration-ms="474" started-at="2017-03-31T16:40:49Z" finished-at="2017-03-31T16:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="anlegen()[pri:0, instance:com.bibliothek.verwaltung.TestKlasse@67784306]" name="anlegen" duration-ms="32" started-at="2017-03-31T16:40:49Z" finished-at="2017-03-31T16:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- anlegen -->
+        <test-method status="PASS" signature="loeschen()[pri:0, instance:com.bibliothek.verwaltung.TestKlasse@67784306]" name="loeschen" duration-ms="3" started-at="2017-03-31T16:40:49Z" finished-at="2017-03-31T16:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loeschen -->
+        <test-method status="PASS" signature="suchAlleBuecher()[pri:0, instance:com.bibliothek.verwaltung.TestKlasse@67784306]" name="suchAlleBuecher" duration-ms="2" started-at="2017-03-31T16:40:49Z" finished-at="2017-03-31T16:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suchAlleBuecher -->
+        <test-method status="PASS" signature="suchenNachId()[pri:0, instance:com.bibliothek.verwaltung.TestKlasse@67784306]" name="suchenNachId" duration-ms="2" started-at="2017-03-31T16:40:49Z" finished-at="2017-03-31T16:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suchenNachId -->
+      </class> <!-- com.bibliothek.verwaltung.TestKlasse -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

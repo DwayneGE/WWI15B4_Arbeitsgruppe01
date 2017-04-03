@@ -18,6 +18,12 @@
 		<org.aspectj-version>1.7.4</org.aspectj-version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
+		
+		<testng.version>6.9.4</testng.version>
+		<mockito.version>1.10.19</mockito.version>
+        <h2.version>1.4.187</h2.version>
+        <dbunit.version>2.2</dbunit.version>
+		
   </properties>
 
   <parent>
@@ -151,6 +157,34 @@
     <version>4.3.0.RELEASE</version>
     <scope>test</scope>
 </dependency>
+
+
+<!-- Mockito -->
+
+       <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>${dbunit.version}</version>
+            <scope>test</scope>
+        </dependency>
 
   </dependencies>
 

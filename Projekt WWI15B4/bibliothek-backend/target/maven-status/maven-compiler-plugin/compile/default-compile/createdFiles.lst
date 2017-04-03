@@ -1,8 +1,6 @@
 com\bibliothek\verwaltung\StartApplication.class
 com\bibliothek\verwaltung\assembler\BuchResourceAssembler.class
 com\bibliothek\verwaltung\controllers\BuchController.class
-com\bibliothek\verwaltung\exception\EntityNotFoundException.class
 com\bibliothek\verwaltung\beans\Buch.class
 com\bibliothek\verwaltung\dao\BuchDAO.class
-com\bibliothek\verwaltung\exception\ControllerExceptionHandler.class
 com\bibliothek\verwaltung\DataBaseConfig.class
